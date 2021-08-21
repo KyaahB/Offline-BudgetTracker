@@ -15,10 +15,14 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+// mongoose.connect("mongodb://localhost/budget", {
+//   useNewUrlParser: true,
+//   useFindAndModify: false
+// });
+
+
+// connection change for deployment
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Progressive-App", {useNewUrlParser: true,useFindAndModify: false,useCreateIndex: true,unUnifiedTopology: true});
 
 // routes
 app.use(require("./routes/api.js"));
