@@ -15,9 +15,12 @@ These are a couple of the main resources helping this app to function:
 
 - [IndexedDatabases](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 
+
 - [IndexedDatabases - with examples](https://www.w3.org/TR/IndexedDB/)
 
+
 - [Express](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
+
 
 - [Mongoose](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose)
 
